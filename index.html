@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-link"></i>
+            <h2>ShortLink</h2>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">History</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Shorten Your Long URLs Instantly</h1>
+            <p>
+                Convert long, messy URLs into short, shareable links with just one click.
+                Fast, secure and easy to use.
+            </p>
+        </div>
+
+        <!-- URL Shortener Card -->
+        <div class="shortener-card">
+
+            <h2>URL Shortener</h2>
+
+            <input
+                type="url"
+                id="longUrl"
+                placeholder="Paste your long URL here..."
+            >
+
+            <button id="shortenBtn">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Shorten URL
+            </button>
+
+            <!-- Result -->
+            <div class="result">
+
+                <h3>Your Short URL</h3>
+
+                <div class="output-box">
+
+                    <input
+                        type="text"
+                        id="shortUrl"
+                        placeholder="https://short.ly/abc123"
+                        readonly
+                    >
+
+                    <button id="copyBtn">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+
+        <h2>Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Fast</h3>
+                <p>Generate shortened links within seconds.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Secure</h3>
+                <p>Your links are safe and protected.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-copy"></i>
+                <h3>Copy</h3>
+                <p>Copy your shortened link with one click.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Responsive</h3>
+                <p>Works perfectly on desktop and mobile.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- History -->
+    <section class="history">
+
+        <h2>Recent URLs</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Original URL</th>
+                    <th>Short URL</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="historyTable">
+
+                <tr>
+
+                    <td>
+                        https://github.com/example/project
+                    </td>
+
+                    <td>
+                        https://short.ly/a1b2
+                    </td>
+
+                    <td>
+                        <button class="copy-history">
+                            Copy
+                        </button>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        https://google.com/search
+                    </td>
+
+                    <td>
+                        https://short.ly/c3d4
+                    </td>
+
+                    <td>
+                        <button class="copy-history">
+                            Copy
+                        </button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ShortLink. Built with ❤️ using HTML, CSS & JavaScript.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
